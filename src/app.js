@@ -11,6 +11,7 @@ console.log(__dirname)
 console.log(path.join(__dirname, '../public'))
 
 const app = express()
+const port = process.env.PORT || 3000 // env is an obj where it sets environment variables
 
 //define paths for express config
 const publicDirectoryPath = path.join(__dirname, '../public')
@@ -126,6 +127,6 @@ app.get('/Weather', (req, res) => {
 //app.com/about and  so on...
 
 
-app.listen(3000, () => {
-    console.log('Server is up and running on port 3000.')
+app.listen(port, () => {
+    console.log('Server is up and running on port' + port)
 })
