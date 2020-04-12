@@ -1,4 +1,4 @@
-console.log('Client side javascript file has loaded!')
+//console.log('Client side javascript file has loaded!')
 
 //example to show how fetch renders the response object(string/array/json object) and throws it onto the console.
 // fetch('http://puzzle.mead.io/puzzle').then((response) => {
