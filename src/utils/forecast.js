@@ -9,7 +9,8 @@ const forecast = (latitude, longitude, callback) => {
         else if(body.error){
             callback('Unable to get the location, give a valid one', undefined)
         } else{
-            callback(undefined, body.current.weather_descriptions[0] + " .The temperature currently is : " + body.current.temperature + " It feels like : " + body.current.feelslike)
+            //console.log("humidity" + body.current.humidity)
+            callback(undefined, body.current.weather_descriptions[0] + " .The temperature currently is : " + body.current.temperature + " It feels like : " + body.current.feelslike + '. The humidity is '+ body.current.humidity + "%.")
         }
     })
 }
